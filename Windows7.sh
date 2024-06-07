@@ -17,8 +17,8 @@ mkdir -p /userdata/roms/microsoft
 mkdir -p /userdata/roms/microsoft/windows7
 
 # Definir ID do arquivo
-curl -L -o /userdata/roms/microsoft/windows7/docker-compose.yml "https://raw.githubusercontent.com/JeversonDias/Windows/main/roms/microsoft/Windows7/docker-compose.yml"
-curl -o /userdata/roms/microsoft/windows7/Windows7.sh https://raw.githubusercontent.com/JeversonDias/Windows/main/roms/microsoft/Windows7/Windows7.sh
+curl -L -o /userdata/roms/microsoft/windows7/docker-compose.yml "https://github.com/garbagescow/Windows/main/roms/microsoft/Windows7/docker-compose.yml"
+curl -o /userdata/roms/microsoft/windows7/Windows7.sh https://github.com/garbagescow/Windows/main/roms/microsoft/Windows7/Windows7.sh
 chmod +x /userdata/roms/microsoft/windows7/Windows7.sh
 
 # Verificar se docker-compose está instalado
@@ -28,7 +28,7 @@ then
     exit 1
 fi
 #Baixar e mover ES para a pasta 
-curl -o /userdata/system/configs/emulationstation/es_systems_microsoft.cfg https://raw.githubusercontent.com/JeversonDias/Windows/main/es_systems_microsoft.cfg
+curl -o /userdata/system/configs/emulationstation/es_systems_microsoft.cfg https://github.com/garbagescow/Windows/main/es_systems_microsoft.cfg
 
 cd /userdata/roms/microsoft/windows7 && docker-compose up  
 pkill xterm
