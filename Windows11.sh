@@ -1,5 +1,5 @@
 #!/bin/bash
-#@JCGAMESCLASSICOS
+# Forked from @JCGAMESCLASSICOS
 # Delete all containers in the first line
 
 #docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
