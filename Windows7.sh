@@ -1,5 +1,5 @@
 #!/bin/bash
-#@JCGAMESCLASSICOS
+#Forked from @JCGAMESCLASSICOS
 # Excluir todos  os containers a primeira linha 
 
 
